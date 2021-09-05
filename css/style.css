@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+/* ========================= */
+@media (max-width:500px) {
+  html {
+    font-size: 12px;
+  }
+
+}
+
+/* ======================== */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 23.125rem;
+  height: 29.375rem;
+  background-color: #fff;
+  padding: 2.5rem 2.1875rem;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+section figure {
+  width: 100%;
+  height: 20.9375rem;
+  position: relative;
+}
+
+section figure .box-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.box-img::after {
+  content: '';
+  width: 0;
+  height: 100%;
+  background-color: #4CA196;
+  opacity: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+section:hover .box-img::after {
+  width: 100%;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+section figcaption {
+  background-color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.0625rem;
+  width: 70%;
+  height: 5.625rem;
+  box-shadow: 0 0 .3125rem 0 rgba(0, 0, 0, 0.096);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 9;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -1.875rem);
+  -webkit-transform: translate(-50%, -1.875rem);
+  -moz-transform: translate(-50%, -1.875rem);
+  -ms-transform: translate(-50%, -1.875rem);
+  -o-transform: translate(-50%, -1.875rem);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+section figcaption h3 {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+section figcaption span {
+  color: #E73233;
+  word-spacing: -0.125rem;
+}
+
+section:hover {
+  padding-top: 1.875rem;
+
+}
+
+
+
+section:hover figcaption {
+  width: 100%;
+}
